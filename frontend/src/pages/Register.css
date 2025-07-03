@@ -1,0 +1,38 @@
+.custom-input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.custom-input-group:hover,
+.custom-input-group:focus-within {
+   border-color: #ccc !important;
+  box-shadow: 0 0 0 3px rgba(217, 4, 41, 0.1);
+}
+
+.input-icon {
+  margin-right: 8px;
+  color: #393E46;
+  font-size: 1rem;
+}
+
+.custom-input-group input {
+  flex: 1;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none;
+  font-family: 'Outfit', sans-serif;
+}
+
+.eye-btn {
+  background: none;
+  border: none;
+  color: #393E46;
+  font-size: 1rem;
+  padding-left: 10px;
+  cursor: pointer;
+}

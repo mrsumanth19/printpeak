@@ -1,0 +1,112 @@
+.mockup-container {
+  position: relative;
+  width: 220px;
+  height: 260px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.mockup-product {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 6px;
+}
+
+.mockup-design {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  pointer-events: none; /* optional */
+}
+
+
+/* 📦 Page Layout */
+.container {
+  font-family: 'Outfit', sans-serif;
+  color: #000000; /* default text black */
+}
+
+/* 🟥 Order Card Styles */
+.card {
+  border: 1px solid #d90429 !important; /* red border */
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  color: #000000 !important; /* ensures all text stays black */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* 🖼 Card Image */
+.card-img-top {
+  height: 250px !important;
+  object-fit: contain !important;
+  background-color: #fdfdfd;
+  padding: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* 📝 Card Text */
+.card-body {
+  padding: 1rem 1.25rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000 !important;
+}
+
+.card-title  {
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: #d90429 !important;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #000000 !important;
+  margin-bottom: 0.3rem;
+}
+
+.card-text strong {
+  color: #000000 !important;
+}
+
+/* 🔗 View Design Button */
+.btn-link {
+  padding: 0 !important;
+  font-weight: 600;
+  color: #d90429;
+}
+
+.btn-link:hover {
+  color: #a6031d;
+  text-decoration: underline;
+}
+
+/* 🕓 Status Timeline */
+.timeline-container {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* 💰 Total Spent Display */
+.total-spent {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #d90429;
+  margin-top: 1rem;
+  text-align: right;
+}

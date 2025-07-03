@@ -1,0 +1,132 @@
+/* Cart.css */
+.product-card {
+  transition: transform 0.2s ease;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.card-body .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1b263b;
+  margin-bottom: 0.4rem;
+}
+
+.card-body .card-text {
+  font-size: 0.95rem;
+  color: #415a77;
+  margin-bottom: 0.3rem;
+}
+
+/* Make card footer buttons equally spaced and responsive */
+.card-body .button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.button-remove {
+  background-color: #929AAB !important;
+  border: none !important;
+  color: white !important;
+  padding: 8px 16px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.button-buy {
+  background-color: #d90429 !important;
+  border: none !important;
+  color: white !important;
+  padding: 8px 16px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* Modal design */
+.custom-buy-modal .modal-header {
+  background-color: #1b263b;
+  color: white;
+}
+
+.custom-buy-modal .modal-title {
+  font-weight: bold;
+}
+
+.custom-buy-modal .modal-body label {
+  font-weight: 500;
+  color: #1b263b;
+}
+
+.custom-buy-modal .form-control,
+.custom-buy-modal .form-select {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.mockup-container {
+  position: relative;
+  width: 220px;
+  height: 260px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.mockup-product {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mockup-design {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  opacity: 1; /* ensure it's fully opaque */
+  mix-blend-mode: normal !important; /* 👈 disables blending */
+  background-color: transparent; /* avoids unwanted background */
+  image-rendering: auto; /* sharp rendering */
+}
+
+
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .button-row {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .button-remove,
+  .button-buy {
+    flex: 1 1 45%;
+  }
+}

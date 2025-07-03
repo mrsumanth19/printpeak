@@ -1,0 +1,62 @@
+/* Remove borders for all cards, forms, buttons, inputs */
+.card, .form-control, .btn, .offcanvas, .modal-content {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.form-control {
+  border-width: 0 !important;
+  outline: none !important;
+}
+
+.btn:focus, .form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.card {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+/* AdminDashboard.css */
+
+/* Offcanvas Panel */
+.admin-offcanvas {
+  background-color: #ffffff;
+  border: none !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 0 20px 20px 0;
+  padding: 20px;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Offcanvas Header */
+.admin-offcanvas .offcanvas-header {
+  border-bottom: none;
+}
+
+/* Offcanvas Title */
+.admin-offcanvas .offcanvas-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #0d1b2a;
+}
+
+/* Offcanvas Buttons */
+.admin-offcanvas .btn {
+  background-color: transparent;
+  color: #d90429;
+  font-weight: 500;
+  border: none;
+  font-size: 16px;
+  padding: 12px 20px;
+  text-align: left;
+  transition: background-color 0.2s ease;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.admin-offcanvas .btn:hover {
+  background-color: rgba(217, 4, 41, 0.1);
+}

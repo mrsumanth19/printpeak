@@ -1,0 +1,28 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #F8F9FA;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: #4B0082;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #370061;
+}
+
+.btn-dark {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}

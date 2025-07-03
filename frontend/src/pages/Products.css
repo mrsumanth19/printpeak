@@ -1,0 +1,95 @@
+/* 1. Card appearance - transparent, no borders */
+.product-card {
+  border: none !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 2. Product image */
+.product-img {
+  height: 250px;
+  object-fit: contain;
+  background-color: #fdfdfd;
+  padding: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* 3. Buttons */
+.product-button-outline {
+  font-weight: 500;
+  border-radius: 6px;
+  min-width: 48%;
+  border: 2px solid #d90429 !important;
+  color: #d90429 !important;
+  background-color: transparent !important;
+}
+
+.product-button-outline:hover {
+  background-color: #ffe8e8 !important;
+}
+
+.product-button-buy {
+  background-color: #d90429 !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 500;
+  border-radius: 6px;
+  min-width: 48%;
+}
+
+/* 4. Mockup preview */
+.mockup-container {
+  position: relative;
+  width: 220px;
+  height: 260px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.mockup-product {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mockup-design {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  opacity: 1; /* ensure it's fully opaque */
+  mix-blend-mode: normal !important; /* 👈 disables blending */
+  background-color: transparent; /* avoids unwanted background */
+  image-rendering: auto; /* sharp rendering */
+}
+
+
+
+/* 5. Filter button */
+.filter-button {
+  border: 1px solid #393E46 !important;
+  border-radius: 10px;
+  background-color: #ffffff !important;
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: #393E46 !important;
+}
