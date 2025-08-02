@@ -8,17 +8,24 @@ const Home = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const fetchTrendingProducts = async () => {
-      try {
-        const res = await axios.get('/api/products');
-        setProducts(res.data.slice(0, 4));
-      } catch (err) {
-        console.error('❌ Error fetching products:', err);
+  const fetchData = async () => {
+    try {
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/products`);
+      if (Array.isArray(res.data)) {
+        setProducts(res.data);
+      } else {
+        console.error("Expected array but got:", res.data);
+        setProducts([]); // prevent crash
       }
-    };
+    } catch (err) {
+      console.error("Error fetching products:", err);
+      setProducts([]);
+    }
+  };
 
-    fetchTrendingProducts();
-  }, []);
+  fetchData();
+}, []);
+
 
   const features = [
     { icon: 'fa-truck-fast', title: 'Fast Delivery', desc: 'Get your products quickly, no delays.' },
